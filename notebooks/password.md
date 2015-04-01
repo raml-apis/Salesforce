@@ -34,7 +34,7 @@ CLIENT_SECRET = prompt("Please, enter clientSecret of your SalesForce applicatio
 
 // Read about the SalesForceRAML API at https://anypoint.mulesoft.com/apiplatform/popular/admin/#/dashboard/apis/8111/versions/8305/contracts
 
-API.createClient('initializationClient', '/apiplatform/repository/public/organizations/30/apis/8111/versions/8305/definition',{baseUriParameters: {
+API.createClient('initializationClient', '#REF_TAG_DEFENITION',{baseUriParameters: {
 
   domain: 'na1.salesforce.com'
 
@@ -94,7 +94,7 @@ DOMAIN = $4.response.instance_url.substr(8)
 
 // Read about the SalesForceRAML API at https://anypoint.mulesoft.com/apiplatform/popular/admin/#/dashboard/apis/8111/versions/8305/contracts
 
-API.createClient('client', '/apiplatform/repository/public/organizations/30/apis/8111/versions/8305/definition',{baseUriParameters: {
+API.createClient('client', '#REF_TAG_DEFENITION',{baseUriParameters: {
 
   domain: DOMAIN
 
